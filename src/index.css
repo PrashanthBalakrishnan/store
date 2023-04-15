@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #232f3e;
+  color: whitesmoke;
+  padding: 30px;
+}
+
+nav {
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-right: 50px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+
+a:hover {
+  color: gray;
+}
+
+/* PRODUCTS */
+.product__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0px;
+}
+
+.product {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: rgb(85, 85, 85);
+  border-radius: 5px;
+}
+.product img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  align-self: center;
+}
+.product__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+/* Button Styles */
+.btn {
+  border: none;
+  padding: 2px 10px;
+  font: inherit;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.danger {
+  background-color: rgb(214, 30, 30);
+  color: white;
+}
+
+.sucess {
+  background-color: #ff9900;
+}
+.cart-btn {
+  font-size: 10px;
+}
+
+.cart-btn:hover {
+  background-color: rgb(92, 14, 14);
+}
+
+.cart__container {
+  display: grid;
+  place-content: center;
+  margin-top: 5px;
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+.cart__container img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+}
+
+.cart__details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+  font-size: 15px;
+}
+.cart__details .price {
+  margin: 0 10px;
+}
+.cart__total {
+  position: absolute;
+  bottom: -50px;
+  right: -100px;
+}
+
+.qty {
+  display: flex;
+  margin: 40px;
+  width: 200px;
+}
+.qty span {
+  margin: 0 5px;
+}
+
+.empty {
+  padding: 40px;
+  font-size: 1.5rem;
+}
